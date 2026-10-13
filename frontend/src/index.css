@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #F4F1EC;
+    color: #1C2733;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Accessibility Font Size Class */
+.large-font {
+  font-size: 1.125rem; /* 18px base */
+}
+
+/* Reduced motion support override class */
+.reduce-motion * {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
